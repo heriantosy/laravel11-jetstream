@@ -24,3 +24,8 @@ MULTI USER
 config/fortify.php 
 
 modifikasi 'home' => '/dashboard', menjadi 'home' => '/home',
+
+
+MEMBUAT MIDDLEWARE
+-----------------------------------------------------
+php artisan make:middleware Admin

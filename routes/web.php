@@ -17,4 +17,5 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('home', [HomeController::class,'index']);
+Route::get('/home', [HomeController::class,'index']);
+Route::get('/adminpage', [HomeController::class,'page']);
