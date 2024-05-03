@@ -21,7 +21,8 @@ class Admin
         {
             return $next($request);
         }
-       abort('401');
+        //abort(401);
+        return redirect('/');
        
     }
 }

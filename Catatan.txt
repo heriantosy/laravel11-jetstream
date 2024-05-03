@@ -29,3 +29,15 @@ modifikasi 'home' => '/dashboard', menjadi 'home' => '/home',
 MEMBUAT MIDDLEWARE
 -----------------------------------------------------
 php artisan make:middleware Admin
+
+
+EXPORT EXCEL
+----------------------------------------------------
+composer require maatwebsite/excel 
+php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider" --tag=config
+php artisan make:export UsersExport --model=User
+
+--put at Controller
+use App\Exports\UsersExport;
+use Maatwebsite\Excel\Excel as ExcelExcel;
+use Maatwebsite\Excel\Facades\Excel;

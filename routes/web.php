@@ -18,4 +18,6 @@ Route::middleware([
 });
 
 Route::get('/home', [HomeController::class,'index']);
-Route::get('/adminpage', [HomeController::class,'page']);
+Route::get('/adminpage', [HomeController::class,'page'])->middleware(['auth','admin']);
+
+Route::get('/download', [HomeController::class, 'export']);
