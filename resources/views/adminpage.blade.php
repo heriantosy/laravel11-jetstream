@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Only Admin Allowed!</h1>
+    <h1>INI BAGIAN ADMIN COY!</h1>
 </body>
 </html>
